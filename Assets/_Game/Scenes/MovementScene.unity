@@ -3074,6 +3074,7 @@ GameObject:
   - component: {fileID: 1814345847}
   - component: {fileID: 1814345846}
   - component: {fileID: 1814345845}
+  - component: {fileID: 1814345849}
   - component: {fileID: 1814345844}
   m_Layer: 0
   m_Name: FP Camera
@@ -3228,6 +3229,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1814345849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814345843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBasicMultiChannelPerlin
+  NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 1
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: -664.70935, y: -707.76624, z: -870.39685}
 --- !u!1 &1865777658
 GameObject:
   m_ObjectHideFlags: 0
