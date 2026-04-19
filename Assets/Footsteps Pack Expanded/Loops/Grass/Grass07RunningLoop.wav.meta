@@ -1,29 +1,23 @@
 fileFormatVersion: 2
-guid: 1ef31a4b0288d1e4bb2d5d16b11fa157
+guid: bd3c64581f546644095d1aede1358902
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 8
   defaultSettings:
+    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
+    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
-  preloadAudioData: 1
   loadInBackground: 0
   ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 330509
-  packageName: Footsteps - Pack
-  packageVersion: 2.0
-  assetPath: Assets/Footsteps Pack Expanded/Loops/Grass/Grass07RunningLoop.wav
-  uploadId: 853480

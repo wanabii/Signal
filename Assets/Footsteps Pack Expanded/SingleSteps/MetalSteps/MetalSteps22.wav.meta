@@ -1,29 +1,23 @@
 fileFormatVersion: 2
-guid: fa7478126bef8724697ddf8fe4816ca5
+guid: 3026b961603d1ba42b4d4c2febb45e76
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 8
   defaultSettings:
+    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
+    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
-  preloadAudioData: 1
   loadInBackground: 0
   ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 330509
-  packageName: Footsteps - Pack
-  packageVersion: 2.0
-  assetPath: Assets/Footsteps Pack Expanded/SingleSteps/MetalSteps/MetalSteps22.wav
-  uploadId: 853480

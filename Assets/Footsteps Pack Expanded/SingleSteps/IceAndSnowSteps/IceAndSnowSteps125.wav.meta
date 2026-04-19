@@ -1,29 +1,23 @@
 fileFormatVersion: 2
-guid: a42f8143df0c7b043bc0c8d2b27a1939
+guid: 9ec5df0455d1a974d84a88d8e680e76b
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 8
   defaultSettings:
+    serializedVersion: 2
     loadType: 0
     sampleRateSetting: 0
     sampleRateOverride: 44100
     compressionFormat: 1
     quality: 1
     conversionMode: 0
+    preloadAudioData: 0
   platformSettingOverrides: {}
   forceToMono: 0
   normalize: 1
-  preloadAudioData: 1
   loadInBackground: 0
   ambisonic: 0
   3D: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 330509
-  packageName: Footsteps - Pack
-  packageVersion: 2.0
-  assetPath: Assets/Footsteps Pack Expanded/SingleSteps/IceAndSnowSteps/IceAndSnowSteps125.wav
-  uploadId: 853480
