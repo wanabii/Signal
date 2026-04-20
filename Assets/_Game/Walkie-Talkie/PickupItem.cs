@@ -8,9 +8,7 @@ public class PickupItem : MonoBehaviour
     [SerializeField] private Vector3 holdLocalPosition = new Vector3(0.3f, -0.25f, 0.6f);
     [SerializeField] private Vector3 holdLocalRotation = Vector3.zero;
     [SerializeField] private Vector3 holdLocalScale = Vector3.one;
-
-    [Header("Object to show when picked up")]
-    [SerializeField] private GameObject objectToShow;
+    
 
     [Header("Another object local transform to change")]
     [SerializeField] private Transform targetToChange;
@@ -67,9 +65,6 @@ public class PickupItem : MonoBehaviour
         transform.localPosition = holdLocalPosition;
         transform.localRotation = Quaternion.Euler(holdLocalRotation);
         transform.localScale = holdLocalScale;
-
-        if (objectToShow != null)
-            objectToShow.SetActive(true);
 
         if (transformChangeDelay > 0f)
             StartCoroutine(ChangeTargetTransformWithDelay());

@@ -15,6 +15,11 @@ public class PlayerPickup : MonoBehaviour
 
     private PickupItem currentTarget;
     private PickupItem heldItem;
+    private RadioItem heldRadio;
+
+    public PickupItem HeldItem => heldItem;
+    public bool IsHoldingSomething => heldItem != null;
+    public bool IsHoldingRadio => heldRadio != null;
 
     private void Awake()
     {
@@ -28,7 +33,6 @@ public class PlayerPickup : MonoBehaviour
     private void Update()
     {
         FindTarget();
-        UpdatePrompt();
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
@@ -56,16 +60,6 @@ public class PlayerPickup : MonoBehaviour
         }
     }
 
-    private void UpdatePrompt()
-    {
-        if (promptText == null)
-            return;
-
-        bool canShow = currentTarget != null && heldItem == null;
-
-        promptText.gameObject.SetActive(canShow);
-    }
-
     private void TryPickUp()
     {
         if (heldItem != null)
@@ -76,8 +70,15 @@ public class PlayerPickup : MonoBehaviour
 
         heldItem = currentTarget;
         heldItem.PickUp(holdPoint);
-        currentTarget = null;
 
-        UpdatePrompt();
+        heldRadio = heldItem.GetComponent<RadioItem>();
+
+        currentTarget = null;
+    }
+
+    public void ClearHeldItem()
+    {
+        heldItem = null;
+        heldRadio = null;
     }
 }
