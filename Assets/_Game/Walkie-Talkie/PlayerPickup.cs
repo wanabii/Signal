@@ -45,9 +45,12 @@ public class PlayerPickup : MonoBehaviour
         currentTarget = null;
 
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-
+        Debug.DrawRay(ray.origin, ray.direction * pickupDistance, Color.red);
         if (Physics.Raycast(ray, out RaycastHit hit, pickupDistance, pickupLayer, QueryTriggerInteraction.Ignore))
         {
+            promptText.gameObject.SetActive(true);
+
+            
             if (!hit.collider.TryGetComponent(out currentTarget))
             {
                 currentTarget = hit.collider.GetComponentInParent<PickupItem>();
@@ -58,6 +61,12 @@ public class PlayerPickup : MonoBehaviour
                 currentTarget = null;
             }
         }
+        else
+        {
+            promptText.gameObject.SetActive(false);
+        }
+        
+        
     }
 
     private void TryPickUp()

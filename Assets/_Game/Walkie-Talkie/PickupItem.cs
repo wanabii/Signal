@@ -1,4 +1,5 @@
 using System.Collections;
+using Assets._Game.Walkie_Talkie;
 using UnityEngine;
 
 public class PickupItem : MonoBehaviour
@@ -70,6 +71,12 @@ public class PickupItem : MonoBehaviour
             StartCoroutine(ChangeTargetTransformWithDelay());
         else
             ChangeTargetTransform();
+
+
+        if (TryGetComponent<Transemitter>(out var transemitter))
+        {
+            transemitter.Play();
+        }
     }
 
     private IEnumerator ChangeTargetTransformWithDelay()

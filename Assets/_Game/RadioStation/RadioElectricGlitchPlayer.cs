@@ -18,9 +18,10 @@ namespace Assets._Game.RadioStation
         }
 
 
-        private void Start()
+        private void OnTriggerEnter(Collider other)
         {
-            StartCoroutine(PlayAudio());
+            if(other.tag == "Player")
+                StartCoroutine(PlayAudio());
         }
         
         private IEnumerator PlayAudio()
