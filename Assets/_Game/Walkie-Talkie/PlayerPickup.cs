@@ -64,11 +64,6 @@ public class PlayerPickup : MonoBehaviour
         bool canShow = currentTarget != null && heldItem == null;
 
         promptText.gameObject.SetActive(canShow);
-
-        if (canShow)
-        {
-            promptText.text = currentTarget.GetPromptText();
-        }
     }
 
     private void TryPickUp()
