@@ -154,9 +154,6 @@
             "m_Id": "a670753e3524458baf1e23f37f114625"
         },
         {
-            "m_Id": "57233d38505646a58c7f33a11577c130"
-        },
-        {
             "m_Id": "5af1703afd8c4d65aa8aeb548695a98f"
         },
         {
@@ -178,9 +175,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "57233d38505646a58c7f33a11577c130"
+                    "m_Id": "5af1703afd8c4d65aa8aeb548695a98f"
                 },
-                "m_SlotId": 1567577928
+                "m_SlotId": 1
             }
         },
         {
@@ -363,20 +360,6 @@
                     "m_Id": "45e18e1052b34b3fa31d45add51d4a54"
                 },
                 "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "57233d38505646a58c7f33a11577c130"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "5af1703afd8c4d65aa8aeb548695a98f"
-                },
-                "m_SlotId": 1
             }
         },
         {
@@ -1220,22 +1203,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "110f28f679124f2594fd086c82a91096",
-    "m_Id": 1213878274,
-    "m_DisplayName": "Glitch Speed",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Glitch_Speed",
-    "m_StageCapability": 3,
-    "m_Value": 5.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "1223ee71d1d549e38789d95eb5cc6bc4",
     "m_Id": 2,
@@ -1378,31 +1345,6 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "17de0d7679a74763921886c7de0b98c7",
-    "m_Id": -404037447,
-    "m_DisplayName": "Glitch Offset",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Glitch_Offset",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0,
-        "w": 1.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_Labels": []
 }
 
 {
@@ -2938,76 +2880,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
-    "m_ObjectId": "57233d38505646a58c7f33a11577c130",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Glitch",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 5792.99951171875,
-            "y": 746.0,
-            "width": 219.0,
-            "height": 398.9998779296875
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "c981d8d4be094839ae5192ba7d943480"
-        },
-        {
-            "m_Id": "17de0d7679a74763921886c7de0b98c7"
-        },
-        {
-            "m_Id": "8a1e6a8c725d429182cbe05f03aac24d"
-        },
-        {
-            "m_Id": "110f28f679124f2594fd086c82a91096"
-        },
-        {
-            "m_Id": "96d1b4d588024e33a02e7e70b0983256"
-        },
-        {
-            "m_Id": "82f9d52b66e54f49a387cfc20f9e7e82"
-        },
-        {
-            "m_Id": "c2a29d7d8d4c49fea48e7305fd04a3e2"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"ac94f3c80d53cae478a235f37cb89f8d\",\n        \"type\": 3\n    }\n}",
-    "m_PropertyGuids": [
-        "d89a8114-c1fa-45e5-8d1c-eda82b0bfd68",
-        "0fdc0cb1-081d-4a48-be73-c038ab97be9a",
-        "e91cd487-35d3-42e3-84b2-05086a0ade83",
-        "716f898f-6543-467e-9c93-36be522f7dc1",
-        "c7339d06-dd6a-49ca-9a9b-3e3d85005566",
-        "fd6a5f6b-1803-484a-8e50-1a1e254dc4f0"
-    ],
-    "m_PropertyIds": [
-        1567577928,
-        -404037447,
-        539253178,
-        1213878274,
-        -711795853,
-        1543396035
-    ],
-    "m_Dropdowns": [],
-    "m_DropdownSelectedEntries": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "5af1703afd8c4d65aa8aeb548695a98f",
     "m_Group": {
@@ -3714,22 +3586,6 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "82f9d52b66e54f49a387cfc20f9e7e82",
-    "m_Id": 1543396035,
-    "m_DisplayName": "Glitch Amount",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Glitch_Amount",
-    "m_StageCapability": 3,
-    "m_Value": 0.009999999776482582,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "8312a3eb7a974b72b7b00a341347f6ad",
     "m_Id": 1,
     "m_DisplayName": "R",
@@ -3818,22 +3674,6 @@
         "y": 0.0,
         "z": 0.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "8a1e6a8c725d429182cbe05f03aac24d",
-    "m_Id": 539253178,
-    "m_DisplayName": "Glitch World Space",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Glitch_World_Space",
-    "m_StageCapability": 3,
-    "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
 }
 
 {
@@ -4169,22 +4009,6 @@
         "e32": 0.0,
         "e33": 1.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "96d1b4d588024e33a02e7e70b0983256",
-    "m_Id": -711795853,
-    "m_DisplayName": "Glitch Tiling",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Glitch_Tiling",
-    "m_StageCapability": 3,
-    "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
 }
 
 {
@@ -4797,29 +4621,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "c2a29d7d8d4c49fea48e7305fd04a3e2",
-    "m_Id": 1,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "c812eacdf78d4eea867dfc0a7385b5d8",
     "m_Id": 2,
@@ -4900,29 +4701,6 @@
     "m_Property": {
         "m_Id": "0580da78ed344a598f6ca9930f1b8b3e"
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "c981d8d4be094839ae5192ba7d943480",
-    "m_Id": 1567577928,
-    "m_DisplayName": "Vertex Position",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_Vertex_Position",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": []
 }
 
 {
