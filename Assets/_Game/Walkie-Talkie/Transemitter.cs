@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets._Game.Walkie_Talkie
@@ -20,6 +21,8 @@ namespace Assets._Game.Walkie_Talkie
         public float hideWordDelay = 0.15f;  // задержка между удалением слов
 
         private Coroutine dialogCoroutine;
+        
+        [SerializeField] List<GameObject> towerLights;
 
         public void Play()
         {
@@ -30,6 +33,11 @@ namespace Assets._Game.Walkie_Talkie
                 StopCoroutine(dialogCoroutine);
 
             dialogCoroutine = StartCoroutine(Dialog());
+
+            foreach (var tower in towerLights)
+            {
+                tower.SetActive(true);
+            }
         }
 
         private IEnumerator Dialog()
